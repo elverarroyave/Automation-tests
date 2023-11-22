@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features="src/test/resources/features/find_tv_in-amazon.feature",
+        features="src/test/resources/features/registrar_socio.feature",
         glue= "co.edu.udea.calidad.stepdefinitions",
         snippets = SnippetType.CAMELCASE
 )
