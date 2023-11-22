@@ -107,9 +107,9 @@
             <span class="breadcrumbs">
                 <a href="index.html">Home</a>
                 > <span class="truncate-40"><a
-                    href="2099ee3c853fa2f71d7cd295d01acc9d64f34a588735aedde0f19d83d127a3b7.html">As User I Need To Search A Product In The Main Amazon Site.</a></span>
+                    href="b010d6c57410b2506467ba42f27cd3302065ced4b85492a825ef11a55281a4f7.html">Validar Registro Exitoso De Un Nuevo Socio Conductor</a></span>
                 > <span class="truncate-60"><a
-                    href="91e2de5d8b2132f976f70ffe5b0c31d1c5c9a87aeebbf3485a871a167499b289.html">Search TV LG in Amazon </a></span>
+                    href="3ada3e586c7bf71b3638396a121cc7d637de4e9d283b819a058ea30269c02c25.html">Dado que estoy en la p&aacute;gina de registro de la plataforma </a></span>
                 > Screenshots
             </span>
         </div>
@@ -131,7 +131,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-11-2023 21:00</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-11-2023 22:00</span>
     <br style="clear:left"/>
 </div>
 
@@ -147,18 +147,15 @@
                             <div>
                                 <h3 class="discreet-story-header">
                                     <i class="fa fa-2x fa-comments-o"></i>
-                                    <span class="story-header-title">As User I Need To Search A Product In The Main Amazon Site. </span>
+                                    <span class="story-header-title">Validar Registro Exitoso De Un Nuevo Socio Conductor </span>
                                     <span class="badge tag-badge" style="">Feature</span>
                                 </h3>
 
                                 <div class="discreet-requirement-narrative-title">
-                                Software
+                                
                                 </div>
                             </div>
 
-                            <div class="requirementNarrative">Background: Main page
-                                    <p></p>
-                            </div>
                         </td>
                         <td valign="top" align="right">
                         </td>
@@ -169,9 +166,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">Search TV LG in Amazon
+                                <span class="failing-color">Dado que estoy en la p&aacute;gina de registro de la plataforma
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -185,22 +182,77 @@
 
     <div class="clr"></div>
 
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given El socio entra en la paggina de registrar socio<br>When completo el formulario de registro con los siguientes datos:<br><table class='embedded'><thead><th>document</th><th>fullName</th><th>email</th><th>phone</th></thead><tbody><tr><td>&lt;document&gt;</td><td>&lt;fullName&gt;</td><td>&lt;email&gt;</td><td>&lt;phone&gt;</td></tr></tbody></table><br>And Y adjunto los siguientes documentos<br>Then Entonces deberia ver un mensaje de confirmacion</div>
+    </div>
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.edu.udea.calidad.taks.AddInformation.performAs(AddInformation.java:26)<br />co.edu.udea.calidad.stepdefinitions.FindTvInStoreStepDefinitions.inputSearchText(FindTvInStoreStepDefinitions.java:21)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.cssSelector: (//button[contains(@class, 'mt-3 text-white text-md rounded-full px-4 py-2 font-semibold hover:scale-105 bg-blue-500')] to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>co.edu.udea.calidad.taks.AddInformation.performAs(AddInformation.java :26)<br />co.edu.udea.calidad.stepdefinitions.FindTvInStoreStepDefinitions.inputSearchText(FindTvInStoreStepDefinitions.java :21)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource3190558004829349044.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="2b76daf65965f631704a57aa82981009ca09a54bd114e33533995f89a9d44347.png" title=" Given the customer enter to main page" width="1920"/>
-                <img src="aef02dbe71bf1bceda8928f728b53d21cb59241589187eb58bf411ddfae70f30.png" title=" Given I enter &quot;Tv Lg&quot; in the search bar" width="1920"/>
-                <img src="aef02dbe71bf1bceda8928f728b53d21cb59241589187eb58bf411ddfae70f30.png" title=" Customer search for" width="1920"/>
-                <img src="aef02dbe71bf1bceda8928f728b53d21cb59241589187eb58bf411ddfae70f30.png" title=" Customer sotre search interaction" width="1920"/>
-                <img src="3a7553a2ad4feb5663b2eb8d2ecf66ae5c8e808929b8ec962ae41ed9eb876856.png" title=" customer enters 'Tv Lg' then hits [RETURN] into INPUT TEXT" width="1920"/>
-                <img src="634a7600e47ba5c987d17d79f83b5bab5d651e39153c4da04a3d5088f7ce2d0c.png" title=" customer enters 'Tv Lg' then hits [RETURN] into INPUT TEXT (completed)" width="1920"/>
-                <img src="634a7600e47ba5c987d17d79f83b5bab5d651e39153c4da04a3d5088f7ce2d0c.png" title=" Customer sotre search interaction (completed)" width="1920"/>
-                <img src="634a7600e47ba5c987d17d79f83b5bab5d651e39153c4da04a3d5088f7ce2d0c.png" title=" Customer search for (completed)" width="1920"/>
-                <img src="634a7600e47ba5c987d17d79f83b5bab5d651e39153c4da04a3d5088f7ce2d0c.png" title=" Given I enter &quot;Tv Lg&quot; in the search bar (completed)" width="1920"/>
-                <img src="634a7600e47ba5c987d17d79f83b5bab5d651e39153c4da04a3d5088f7ce2d0c.png" title=" When I press the search magnifying glass" width="1920"/>
-                <img src="634a7600e47ba5c987d17d79f83b5bab5d651e39153c4da04a3d5088f7ce2d0c.png" title=" Then I can see the search results of &quot;Tv Lg&quot;: <span class='success-color'>SUCCESS</span>" width="1920"/>
+                <img src="c23799758a522b0741bce8c56160bd7fe442a7b9d7c8f750958ecaca3b40a952.png" title=" Example: {document=12345, fullName=PEPE CUENCA, email=pepe@gmail.com, phone=3123128223}" width="1920"/>
+                <img src="c23799758a522b0741bce8c56160bd7fe442a7b9d7c8f750958ecaca3b40a952.png" title=" Given El socio entra en la paggina de registrar socio" width="1920"/>
+                <img src="c23799758a522b0741bce8c56160bd7fe442a7b9d7c8f750958ecaca3b40a952.png" title=" When completo el formulario de registro con los siguientes datos:
+| document | fullName | email | phone |
+| 12345 | PEPE CUENCA | pepe@gmail.com | 3123128223 |" width="1920"/>
+                <img src="c23799758a522b0741bce8c56160bd7fe442a7b9d7c8f750958ecaca3b40a952.png" title=" Customer add information" width="1920"/>
+                <img src="c23799758a522b0741bce8c56160bd7fe442a7b9d7c8f750958ecaca3b40a952.png" title=" customer enters '12345' into INPUT socio document" width="1920"/>
+                <img src="0bc031fe24241a23b24202b14a6d2183af2e33d2cb74953f423474c3feb8a25a.png" title=" customer enters '12345' into INPUT socio document (completed)" width="1920"/>
+                <img src="0bc031fe24241a23b24202b14a6d2183af2e33d2cb74953f423474c3feb8a25a.png" title=" customer enters 'PEPE CUENCA' into INPUT socio document" width="1920"/>
+                <img src="07dc0db574ae6a9b13484585031355239a1488e88c653e83fbe9170ed8ad9ac3.png" title=" customer enters 'PEPE CUENCA' into INPUT socio document (completed)" width="1920"/>
+                <img src="07dc0db574ae6a9b13484585031355239a1488e88c653e83fbe9170ed8ad9ac3.png" title=" customer enters 'pepe@gmail.com' into INPUT socio document" width="1920"/>
+                <img src="de1ca774d46b2d864d6d1f2f5180fd18b4274ac28fe3a12b80c01fa168252cd6.png" title=" customer enters 'pepe@gmail.com' into INPUT socio document (completed)" width="1920"/>
+                <img src="de1ca774d46b2d864d6d1f2f5180fd18b4274ac28fe3a12b80c01fa168252cd6.png" title=" customer enters '3123128223' into INPUT socio document" width="1920"/>
+                <img src="98748f577923a3160c015eef23c0cb9deabe0f8302cdb60544fed7c078dc2b23.png" title=" customer enters '3123128223' into INPUT socio document (completed)" width="1920"/>
+                <img src="98748f577923a3160c015eef23c0cb9deabe0f8302cdb60544fed7c078dc2b23.png" title=" customer clicks on BTN to register socio" width="1920"/>
+                <img src="555e36d2bb372b0172d68c8277b543abcb085954f88406ce55963fadfda925ec.png" title=" customer clicks on BTN to register socio (completed): <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 

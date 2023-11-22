@@ -1,13 +1,16 @@
 #Author:Elver Arroyave
     #language:en
 
-Feature: As user I need to search a product in the main Amazon site.
-  Software
+Feature: Validar registro exitoso de un nuevo socio conductor
 
-  Background: Main page
-      Given the customer enter to main page
 
-  Scenario: Search TV LG in Amazon
-    Given I enter "Tv Lg" in the search bar
-    When I press the search magnifying glass
-    Then I can see the search results of "Tv Lg"
+  Scenario Outline: Validar registro exitoso de un nuevo socio conductor
+    Given me encuentroen la pagina de registrar socio
+    When completo el formulario de registro con los siguientes datos:
+      | document   | fullName   | email   | phone    |
+      | <document> | <fullName> | <email> | <phone>  |
+    And adjunto los siguientes documentos
+    Then deberia ver un mensaje de confirmacion
+    Examples:
+      | document   | fullName   | email   | phone    |
+      | 1038134914 | ELVER ARROYAVE | elver.arroyave@udea.edu.co | 3123128223  |

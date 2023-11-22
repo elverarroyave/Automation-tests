@@ -13,11 +13,8 @@ public class generalStepDefinitions {
     @Before
     public void init(){setTheStage(new Cast());}
 
-    @Given("^the customer enter to main page$")
+    @Given("^me encuentroen la pagina de registrar socio$")
     public void theStudentEnterToMainPage(){
-//        theActorCalled("customer").can(BrowseTheWeb.with(OwnWebDriver.nuevo().chrome("https://www.amazon.com/")));
-//        theActorCalled("customer").can(BrowseTheWeb.with(OwnWebDriver.nuevo().chrome("https://www.alkosto.com/")));
-//        theActorCalled("customer").can(BrowseTheWeb.with(OwnWebDriver.nuevo().chrome("https://www.exito.com/")));
-        theActorCalled("customer").can(BrowseTheWeb.with(OwnWebDriver.nuevo().chrome("https://www.linio.com.co/")));
+        theActorCalled("customer").can(BrowseTheWeb.with(OwnWebDriver.nuevo().chrome("http://localhost:3000/registroSocio")));
     }
 }
