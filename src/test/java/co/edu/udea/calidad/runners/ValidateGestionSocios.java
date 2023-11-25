@@ -1,19 +1,16 @@
 package co.edu.udea.calidad.runners;
 
-
-
-
-import cucumber.api.CucumberOptions;
-import cucumber.api.SnippetType;
+import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features="src/test/resources/features/registrar_socio.feature",
+        features="src/test/resources/features/gestion_de_socios.feature",
         glue= "co.edu.udea.calidad.stepdefinitions",
-        snippets = SnippetType.CAMELCASE
+        snippets = CucumberOptions.SnippetType.CAMELCASE,
+        tags = "@TEST-003"
 )
-public class FindHomePage {
+public class ValidateGestionSocios {
 
 }
